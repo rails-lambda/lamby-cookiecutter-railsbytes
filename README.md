@@ -1,3 +1,6 @@
+This template is hosted on RailsBytes at: **https://railsbytes.com/templates/zamsdp**
+
+
 # Rails Lamby Project Template
 
 This repository contains a Ruby on Rails application template (`template.rb`) designed to quickly set up a new or existing Rails project for deployment to AWS Lambda using the [Lamby gem](https://lamby.cloud/). It aims to replicate the structure, configurations, and best practices of a reference project ("lamby-cookiecutter"), providing a robust foundation for serverless Rails applications.
