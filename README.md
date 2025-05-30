@@ -1,6 +1,7 @@
 # Rails Lamby Project Template
 
-This repository contains a Ruby on Rails application template (`template.rb`) designed to quickly set up a new or existing Rails project for deployment to AWS Lambda using the [Lamby gem](https://lamby.cloud/). It aims to replicate the structure, configurations, and best practices of a reference project ("my_awesome_lambda"), providing a robust foundation for serverless Rails applications.
+This repository contains a Ruby on Rails application template (`template.rb`) designed to quickly set up a new or existing Rails project for deployment to AWS Lambda using the [Lamby gem](https://lamby.cloud/). It aims to replicate the structure, configurations, and best practices of a reference project ("lamby-cookiecutter"), providing a robust foundation for serverless Rails applications.
+
 
 ## Features Provided by This Template
 
@@ -38,22 +39,20 @@ When applied to a Rails application, this template will:
 
 ## How to Use This Template
 
+This template is hosted on RailsBytes at: **https://railsbytes.com/templates/zamsdp**
+
 ### For a New Rails Application:
 
 1.  Ensure you have Ruby, Rails, Bundler, AWS CLI, AWS SAM CLI, and Docker installed.
 2.  Navigate to the directory where you want to create your new application.
-3.  Run the following command, replacing `<your_app_name>` with your desired application name and `<path_or_url_to_template_rb>` with the correct path or URL to this `template.rb` file:
+3.  Run the following command, replacing `<your_app_name>` with your desired application name:
 
     ```bash
-    rails new <your_app_name> -m <path_or_url_to_template_rb>
+    rails new <your_app_name> -m https://railsbytes.com/script/zamsdp
     ```
-    For example, if `template.rb` is in the current directory:
+    *Example:*
     ```bash
-    rails new my_lamby_app -m ./template.rb
-    ```
-    If hosted on RailsBytes:
-    ```bash
-    rails new my_lamby_app -m https://railsbytes.com/script/your_script_id
+    rails new my_lamby_app -m https://railsbytes.com/script/zamsdp
     ```
 
 4.  The template will prompt you to select a database.
@@ -63,19 +62,12 @@ When applied to a Rails application, this template will:
 
 1.  Ensure your existing application is under version control (git) as the template will make changes.
 2.  Navigate to your application's root directory.
-3.  Run the following command, replacing `<path_or_url_to_template_rb>`:
+3.  Run the following command:
 
     ```bash
-    rails app:template LOCATION=<path_or_url_to_template_rb>
+    rails app:template LOCATION='https://railsbytes.com/script/zamsdp'
     ```
-    For example:
-    ```bash
-    rails app:template LOCATION=./template.rb
-    ```
-    Or for RailsBytes:
-    ```bash
-    rails app:template LOCATION='https://railsbytes.com/script/your_script_id'
-    ```
+
 4.  The template will prompt for database selection (though this has more implications for an existing app with an already configured database – review changes carefully).
 5.  Carefully review the changes made by the template. You might need to resolve conflicts or adjust configurations based on your existing setup.
 
